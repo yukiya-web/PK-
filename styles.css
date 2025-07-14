@@ -1,1 +1,51 @@
-aio
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container{
+  text-align: center;
+}
+
+.game-area{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #333;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.goalkeeper{
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background-color: #ff0000;
+  bottom: 0;
+  left: 125px;/*中央に配置*/
+  transition: left 0.5s;
+}
+
+.ball{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  bottom: 80px;/*ボールの初期位置*/
+  left: 140px;/*中央に配置*/
+}
+
+.control{
+  margin-top: 20px;
+}
+
+.result{
+  margin-top: 20px;
+  font-size: 1.5em;
+}
